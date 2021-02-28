@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(105, 105, 105) 0%, rgb(10, 10, 10) 100%);
+}
+.headpic {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.head {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.head h1 {
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-size: 35px;
+    color: #4494c2;
+    word-spacing: 5px;
+    font-weight:bold;
+}
+.head p {
+    color: rgb(255, 255, 255);
+    line-height: 1.3em;
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-size: 16px;
+    margin-top: 25px;
+    opacity: 0.8;
+}
+.image {
+    margin-left: 400px;
+    margin-top: 50px;
+}
+
+.icons {
+    display:flex;
+    flex-direction: row;
+    margin-top: 225px;
+    margin-left:150px;
+    align-items: center;
+}
+
+.iconslist {
+    border-radius: 25px;
+    margin-left: 65px;
+    background-color: rgb(155, 153, 153);
+    opacity: 0.5;
+    height: 40px;
+    width: 60px;
+}
+
+.iconslist i{
+    margin-left: 20px;
+    margin-top:9px;
+    font-size: 1.5em;
+    opacity: 2;
+}
+a{
+    text-decoration: none;
+}
+i{
+    color:rgb(38, 12, 134);
+}
+i:hover {
+    color: rgb(134, 0, 0);
+}
+  
+i:active {
+    color: rgb(11, 38, 168);
+}
+.iconslist .popup{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.iconslist .popup .popuptext1 {
+    visibility: hidden;
+    width: 160px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position:absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+    width:750px;
+}
+  
+  /* Popup arrow */
+.iconslist .popup .popuptext1::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+.iconslist .popup .popuptext2 {
+    visibility: hidden;
+    width: 160px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position:absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+  
+  /* Popup arrow */
+.iconslist .popup .popuptext2::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+  
+  /* Toggle this class - hide and show the popup */
+.iconslist .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+  
+  /* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+  
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+}
+
+.listskills{
+    display: flex;
+    flex-direction: row;
+    line-height: 3.5em;
+}
+
+.listskills li{
+    margin-left: 30px;
+}
+
+.popuptext1 h4{
+    color: rgb(85, 56, 192);
+    font-weight: bolder;
+}
+
+.popuptext2 h4{
+    color: rgb(85, 56, 192);
+    font-weight: bolder;
+}

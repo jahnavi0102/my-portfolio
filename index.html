@@ -1,0 +1,158 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip({
+                placement : 'bottom'
+            });
+        });
+
+        // When the user clicks on div, open the popup
+        function myFunction1() {
+        var popup1 = document.getElementById("myPopup1");
+        popup1.classList.toggle("show");
+        }
+
+        function myFunction2() {
+        var popup2 = document.getElementById("myPopup2");
+        popup2.classList.toggle("show");
+        }
+    </script> 
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="container">
+        <div class="headpic">
+            <div class="head">
+                <h1>
+                    About Me ...
+                </h1>
+                <p>
+                    Software developer and data science professional.<br>
+                    Core competencies involve strong communication skills,<br>
+                    strong-willed to code and debug, understanding of the business<br>
+                    dynamics and working accordingly.<br>
+                    Strong work ethics and quick learning are my success factors. 
+                </p>
+            </div>
+            <div class="image">
+                <img src="2pic.jpeg" alt="profilepic" width="225" height="200">
+            </div>
+        </div>
+        <div class="icons">
+            <div class="iconslist"> 
+                <div class="popup" onclick="myFunction1()">
+                    <i class="fa fa-pencil" aria-hidden="true" data-toggle="tooltip" title="Skills"></i>
+                    <span class="popuptext1" id="myPopup1">
+                        <h4>My Skills Are...</h4>
+                        <div class="list">
+                            <ul>
+                                <div class="listskills">
+                                    <li>
+                                        Python 
+                                    </li>
+                                    <li>
+                                        HTML 
+                                    </li> 
+                                    <li>   
+                                        CSS
+                                    </li> 
+                                    <li>   
+                                        JavaScript
+                                    </li> 
+                                    <li>   
+                                        React.js
+                                    </li>
+                                    <li>    
+                                        Angular.js
+                                    </li> 
+                                    <li>   
+                                        Node.js
+                                    </li>
+                                    <li>    
+                                        Django
+                                    </li>  
+                                    <li>  
+                                        MongoDB
+                                    </li> 
+                                </div>
+                                <div class="listskills">
+                                    <li>   
+                                        Flask
+                                    </li>
+                                    <li>    
+                                        PostgreSQL
+                                    </li> 
+                                    <li>   
+                                        Sqlalchemy
+                                    </li>
+                                    <li>    
+                                        SQL 
+                                    </li>
+                                    <li>    
+                                        MySQL
+                                    </li>
+                                    <li>    
+                                        Celery
+                                    </li>
+                                    <li>    
+                                        Redis
+                                    </li> 
+                                    <li>   
+                                        Docker
+                                    </li> 
+                                    <li>   
+                                        GraphQL
+                                    </li> 
+                                </div>   
+                            </ul>
+                        </div>
+                    </span>
+                </div> 
+            </div>
+            <div class="iconslist">
+                <a  href="mailto:jahnavijain01@gmail.com" target="_top" >
+                    <i class="fa fa-envelope" aria-hidden="true" data-toggle="tooltip" data-original-title="Mail"></i>
+                </a>   
+            </div>
+            <div class="iconslist">
+                <a href="https://www.linkedin.com/in/jahnavijain/" target="__blank">
+                    <i class="fa fa-linkedin" aria-hidden="true" data-toggle="tooltip" data-original-title="Linkedin"></i>
+                </a>
+            </div>
+            <div class="iconslist">
+                <a href="https://github.com/jahnavi0102" target="__blank">
+                    <i class="fa fa-github-alt" aria-hidden="true" data-toggle="tooltip" data-original-title="Github"></i>
+                </a>    
+            </div>
+            <div class="iconslist">
+                <a href="exp.html" target="__blank">
+                    <i class="fa fa-star" aria-hidden="true" data-toggle="tooltip" data-original-title="Achievements"></i>
+                </a>
+            </div>
+            <div class="iconslist">
+                <div class="popup" onclick="myFunction2()">
+                    <i class="fa fa-gamepad" aria-hidden="true" data-toggle="tooltip" data-original-title="Side Activities"></i>
+                        <span class="popuptext2" id="myPopup2">
+                            <h4>My Interest..</h4>
+                            Dancing!<br>
+                            Singing!<br>
+                            Swimming!<br>
+                            Outdoor Games!<br>
+                            Reading!<br>
+                            PC Games!<br>
+                        </span>        
+                </div>    
+            </div>
+        </div>
+    </div>
+</body>
+</html>
